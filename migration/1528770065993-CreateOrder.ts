@@ -3,7 +3,24 @@ import { MigrationInterface, QueryRunner, Table } from "typeorm";
 export class CreateOrder1528770065993 implements MigrationInterface {
 
     public async up(queryRunner: QueryRunner): Promise<any> {
-        await queryRunner.query("CREATE TABLE orders ( id int, foodId int, orderAt TIMESTAMP NULL DEFAULT NULL, PRIMARY KEY(id)); ");
+        await queryRunner.createTable(new Table({
+            name: "orders",
+            columns: [
+                {
+                    name: "id",
+                    type: "int",
+                    isPrimary: true
+                },
+                {
+                    name: "foodId",
+                    type: "int",
+                },
+                {
+                    name: "orderAt",
+                    type: "timestamp",
+                }
+            ]
+        }), true);
     }
 
     public async down(queryRunner: QueryRunner): Promise<any> {

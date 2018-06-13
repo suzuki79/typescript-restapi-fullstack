@@ -1,5 +1,12 @@
 
-# Quick Start
+# Typescriot Fullstack Sample Application
+- typescript(nodejs)
+- express 
+- typeorm for orm, migration
+- jest
+- winston for logger
+- mysql
+# Start Application
 ```bash
 yarn start
 ```
@@ -9,6 +16,9 @@ yarn test
 ```
 
 # Migration
+see more detail.  
+https://github.com/typeorm/typeorm/blob/master/docs/migrations.md
+
 - install
 ```bash
 npm i typeorm -g

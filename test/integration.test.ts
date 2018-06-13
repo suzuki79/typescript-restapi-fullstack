@@ -1,8 +1,8 @@
-import { app } from "../main/app";
+import { app } from "../src/app";
 
 import { getManager } from "typeorm";
-import { init as initDb, stop as stopDb } from "../main/db";
-import { Order } from "../main/domain/model/order";
+import { init as initDb, stop as stopDb } from "../src/db";
+import { Order } from "../src/domain/model/order";
 
 import * as mock from "supertest";
 

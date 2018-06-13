@@ -8,10 +8,10 @@
     "synchronize": false,
     "logging": false,
     "entities": [
-        "src/main/domain/model/*.ts"
+        "src/domain/model/*.ts"
     ],
     "migrations": [
-        "src/migration/*.ts"
+        "migration/*.ts"
     ],
     "subscribers": [
         "src/subscriber/**/*.ts"
@@ -21,8 +21,8 @@
         "min": 5
     },
     "cli": {
-        "entitiesDir": "src/main/domain/model",
-        "migrationsDir": "src/migration",
+        "entitiesDir": "src/domain/model",
+        "migrationsDir": "migration",
         "subscribersDir": "src/subscriber"
     }
 }

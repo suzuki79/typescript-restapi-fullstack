@@ -7,7 +7,7 @@
     "build": "tsc",
     "clean": "rm -rf dist",
     "lint": "tslint --project .",
-    "start": "ts-node-dev src/main/server.ts",
+    "start": "ts-node-dev src/server.ts",
     "test": "jest",
     "typeorm": "ts-node ./node_modules/.bin/typeorm"
   },

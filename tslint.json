@@ -1,0 +1,19 @@
+{
+    "extends": [
+        "tslint:recommended"
+    ],
+    "rules": {
+        "no-console": [
+            false
+        ],
+        "object-literal-sort-keys": false,
+        "trailing-comma": false,
+        "no-var-requires": false,
+        "max-line-length": false,
+        "member-access": [
+            false,
+            "check-accessor",
+            "check-parameter-property"
+        ]
+    }
+}
